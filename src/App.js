@@ -50,7 +50,7 @@ class App extends Component {
             </Col>
           </Row>
           <Row className="d-flex justify-content-center mt-4">
-            <Col xm="12">
+            <Col xm="8">
               <h5>
                 {`Image container with the <picture> element, followed by two different <source> elements. In Safari browser will be shown JPEG image, in another will be chosen WebP image`}
               </h5>
