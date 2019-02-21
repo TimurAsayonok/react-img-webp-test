@@ -12,11 +12,8 @@ const PictureComponent = (props) => {
   return (
     <div>
       <picture>
-        <source
-          srcSet={imgSrcSetJPG}
-          media="(min-width: 1000px)"
-        />
-        <img src={props.src.webp} alt="insert alt text here"/>
+        <source srcSet={imgSrcSetWebP} type="image/webp" />
+        <img src={imgSrcSetJPG} alt="insert alt text here"/>
       </picture>
     </div>
   )
@@ -42,7 +39,7 @@ class App extends Component {
                 <h5>WebP image. This image won't be shown at Safary and etc. (all list of browsers you can check here..) with img type `type="image/webp"`</h5>
               </Row>
               <div>
-                <img type="image/webp" src={require('./imges/1.sm.webp')} />
+                <img type="image/webp" src='https://www.gstatic.com/webp/gallery/2.sm.webp' />
               </div>
             </Col>
           </Row>
